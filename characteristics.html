@@ -42,19 +42,43 @@
       max-width: 300px; /* Set max width for the image */
     }
 
-    .img-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-    }
+   .img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
 
-    .img-container img {
-      margin-right: 20px; /* Space between image and text */
-    }
+.img-container img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
 
-    .text-content {
-      max-width: 800px;
-    }
+.text-content {
+  max-width: 800px;
+  flex: 1;
+  padding-left: 0;
+}
+
+/* Responsive: stack image and text on smaller screens */
+@media (min-width: 768px) {
+  .img-container {
+    flex-wrap: nowrap;
+  }
+
+  .img-container img {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .text-content {
+    padding-left: 20px;
+  }
+}
 
     /* Additional styling for links */
     a {
