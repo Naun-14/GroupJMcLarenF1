@@ -16,12 +16,12 @@
   <style>
     body {
       font-family: 'Roboto Condensed', sans-serif;
-      background-color: #f0f8ff; /* Light blue background */
-      color: #003366; /* Dark blue text color */
+      background-color: #ffffff; /* White background */
+      color: #333333; /* Dark text color for readability */
     }
 
     header h1 {
-      color: #0077cc; /* Blue color for header */
+      color: #0077cc; /* Blue header */
       text-align: center;
       margin-top: 50px;
     }
@@ -37,23 +37,23 @@
     }
 
     footer {
-      background-color: #003366; /* Dark blue background for footer */
+      background-color: #003366; /* Dark blue footer */
       color: #ffffff; /* White text in footer */
       text-align: center;
       padding: 10px 0;
     }
 
     footer a {
-      color: #ffcc00; /* Yellowish color for link */
+      color: #ffcc00; /* Yellowish link color */
       text-decoration: none;
     }
 
     footer a:hover {
-      color: #ff8000; /* Hover effect for links */
+      color: #ff8000; /* Hover effect on links */
     }
 
     .btn {
-      background-color: #0077cc; /* Blue button color */
+      background-color: #0077cc; /* Blue button */
       color: white;
       border-radius: 5px;
       padding: 10px 20px;
@@ -65,9 +65,24 @@
 
     .img-fluid {
       border-radius: 10px;
+      max-width: 300px; /* Set max width for the image */
     }
 
-    /* Additional styling for links, if needed */
+    .img-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .img-container img {
+      margin-right: 20px; /* Space between image and text */
+    }
+
+    .text-content {
+      max-width: 800px;
+    }
+
+    /* Additional styling for links */
     a {
       color: #0077cc; /* Blue link color */
     }
@@ -88,40 +103,29 @@
       <h2>About McLaren</h2>
       <p>McLaren is a British automotive manufacturer and Formula One team. Founded in 1963 by Bruce McLaren, the company is known for pushing the boundaries of technology and motorsport innovation.</p>
 
-      <h3>Key Characteristics</h3>
-      <ul>
-        <li><strong>Founded:</strong> 1963</li>
-        <li><strong>Founder:</strong> Bruce McLaren</li>
-        <li><strong>Headquarters:</strong> Woking, England</li>
-        <li><strong>Industry:</strong> Formula One and high-performance automotive</li>
-        <li><strong>Notable For:</strong> Advanced materials, carbon fiber use, hybrid systems, aerodynamic excellence</li>
-        <li><strong>Formula One Debut:</strong> 1966 (first race: 1966 Monaco Grand Prix)</li>
-        <li><strong>Innovations:</strong> Carbon-fiber monocoque chassis, active suspension, hybrid powertrains, advanced aerodynamics</li>
-        <li><strong>Famous Cars:</strong> McLaren F1, McLaren P1, McLaren 720S, McLaren 570S, McLaren MP4/4</li>
-        <li><strong>Racing Achievements:</strong> 8 Constructors' Championships, 12 Drivers' Championships in Formula One</li>
-        <li><strong>Notable Drivers:</strong> Ayrton Senna, Alain Prost, Mika Häkkinen, Lewis Hamilton, Daniel Ricciardo, Lando Norris</li>
-        <li><strong>Key Partnerships:</strong> TAG (engine supplier), Honda, Mercedes-Benz, Renault, and more recently, McLaren's own power unit department</li>
-        <li><strong>Iconic Design Philosophy:</strong> Lightweight, high-performance engineering, and aerodynamics. McLaren vehicles are designed with a focus on the driver experience, from handling to cutting-edge technology.</li>
-        <li><strong>Motorsport Legacy:</strong> McLaren has a rich history in motorsport, particularly in Formula 1, with a legacy of significant innovations in both the chassis and engine technology. McLaren has also participated in endurance racing, including the **24 Hours of Le Mans**, where the McLaren F1 became a famous winner in 1995.</li>
-        <li><strong>Notable Innovations in Engineering:</strong> McLaren was one of the first teams to use **carbon-fiber monocoque** chassis in Formula 1 (introduced with the McLaren MP4/1 in 1981). This innovation has since revolutionized car design in all forms of motorsport.</li>
-        <li><strong>Hybrid Systems:</strong> In recent years, McLaren has been at the forefront of hybrid technology in motorsport, especially through the McLaren P1 hypercar, which features an advanced hybrid powertrain combining gasoline and electric power. McLaren’s Formula 1 car designs have also incorporated hybrid technology since the 2014 season with the introduction of turbocharged engines and energy recovery systems (ERS).</li>
-        <li><strong>Advanced Aerodynamics:</strong> McLaren’s engineering team is known for its pioneering work in aerodynamics. The MP4/4 and its successors featured highly innovative aerodynamic packages that led to dominance in the 1980s and 1990s. More recently, McLaren has continued to push the boundaries of aerodynamic performance in Formula 1, with highly sophisticated floor and wing designs.</li>
-        <li><strong>Environmental Commitment:</strong> McLaren has emphasized sustainability and environmental responsibility in its car development, particularly with its hybrid and electric vehicle models. The **McLaren Speedtail**, a hypercar released in 2020, incorporates a hybrid drivetrain that reduces fuel consumption while maintaining extreme performance.</li>
-        <li><strong>McLaren Automotive:</strong> While McLaren is best known for its Formula 1 team, McLaren Automotive is a major player in the luxury supercar market. Their cars, such as the **McLaren 720S**, **McLaren 570S**, and the **McLaren Artura**, offer a combination of cutting-edge technology, lightweight construction, and blistering performance, rivaling other luxury automotive brands like Ferrari and Lamborghini.</li>
-        <li><strong>Engineering Excellence:</strong> McLaren has always prided itself on its engineering prowess, both on the track and on the road. The McLaren Technology Centre (MTC) in Woking, UK, serves as the company's engineering hub and features some of the most advanced design, simulation, and manufacturing facilities in the world.</li>
-      </ul>
-
-      <!-- Add Image about McLaren's Characteristics -->
-      <div class="my-4 text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/McLaren_logo.svg" alt="McLaren Logo" class="img-fluid" style="max-width: 250px;">
-        <p class="mt-3">McLaren: Innovation, Performance, and Engineering Excellence</p>
+      <!-- Image and text container -->
+      <div class="img-container">
+        <!-- McLaren Image from Wikipedia -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/McLaren_logo.svg" alt="McLaren Logo" class="img-fluid">
+        
+        <!-- Text beside the image -->
+        <div class="text-content">
+          <h3>Key Characteristics of McLaren</h3>
+          <ul>
+            <li><strong>Founded:</strong> 1963</li>
+            <li><strong>Founder:</strong> Bruce McLaren</li>
+            <li><strong>Headquarters:</strong> Woking, England</li>
+            <li><strong>Industry:</strong> Formula One and high-performance automotive</li>
+            <li><strong>Notable For:</strong> Advanced materials, carbon fiber use, hybrid systems, aerodynamic excellence</li>
+            <li><strong>Formula One Debut:</strong> 1966 (first race: 1966 Monaco Grand Prix)</li>
+            <li><strong>Famous Cars:</strong> McLaren F1, McLaren P1, McLaren 720S, McLaren 570S, McLaren MP4/4</li>
+            <li><strong>Racing Achievements:</strong> 8 Constructors' Championships, 12 Drivers' Championships in Formula One</li>
+            <li><strong>Notable Drivers:</strong> Ayrton Senna, Alain Prost, Mika Häkkinen, Lewis Hamilton, Daniel Ricciardo, Lando Norris</li>
+            <li><strong>Key Partnerships:</strong> TAG (engine supplier), Honda, Mercedes-Benz, Renault, and more recently, McLaren's own power unit department</li>
+          </ul>
+        </div>
       </div>
-
-      <!-- McLaren F1 Car Image -->
-      <div class="my-4 text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/McLaren_F1_2011_Goodwood_Festival_of_Speed.jpg" alt="McLaren F1" class="img-fluid" style="max-width: 500px;">
-        <p class="mt-3">The McLaren F1, a legendary car in both motorsport and automotive history.</p>
-      </div>
+      
     </section>
   </main>
 
@@ -130,4 +134,5 @@
   </footer>
 </body>
 </html>
+
 
